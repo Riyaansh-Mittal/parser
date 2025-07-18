@@ -134,7 +134,9 @@
     "express": "^4.16.4",
     "puppeteer": "13.5.2",
     "puppeteer-extra": "^3.3.4",
-    "puppeteer-extra-plugin-stealth": "^2.11.1"
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "puppeteer-extra-plugin-anonymize-ua": "2.3.1",
+    "random-useragent": "0.5.0"
   },
   "bundleDependencies": [
     "jquery",
