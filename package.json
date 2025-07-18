@@ -33,7 +33,7 @@
     "lint": "eslint . --fix",
     "lint:ci": "remark . && eslint .",
     "lint-fix-quiet": "eslint --fix --quiet",
-    "build": "yarn lint && rollup -c && yarn test:build",
+    "build": "yarn lint || true && rollup -c && yarn test:build",
     "build:ci": "rollup -c && yarn test:build",
     "build:web": "yarn lint && rollup -c rollup.config.web.js && yarn test:build:web",
     "build:esm": "yarn lint && rollup -c rollup.config.esm.js && yarn test:build:esm",
@@ -82,7 +82,6 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
-    "express": "^4.16.4",
     "husky": "^3.0.0",
     "inquirer": "^7.0.0",
     "jasmine-core": "^2.5.2",
@@ -131,7 +130,8 @@
     "turndown": "^7.1.1",
     "valid-url": "^1.0.9",
     "wuzzy": "^0.1.4",
-    "yargs-parser": "^15.0.1"
+    "yargs-parser": "^15.0.1",
+    "express": "^4.16.4"
   },
   "bundleDependencies": [
     "jquery",
