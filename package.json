@@ -53,7 +53,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=10"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -132,7 +132,7 @@
     "wuzzy": "^0.1.4",
     "yargs-parser": "^15.0.1",
     "express": "^4.16.4",
-    "puppeteer": "24.14.0"
+    "puppeteer": "13.5.2"
   },
   "bundleDependencies": [
     "jquery",
