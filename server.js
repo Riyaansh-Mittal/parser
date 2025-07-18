@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const Mercury = require("@postlight/mercury-parser");
+const Mercury = require("./dist/mercury");
 const express = require("express");
 const app = express();
 
