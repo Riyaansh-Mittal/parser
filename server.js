@@ -1,12 +1,11 @@
 const express = require("express");
-const Mercury = require("@postlight/mercury-parser");
+const Mercury = require("./dist/mercury");
 const app = express();
 
 app.use(express.json());
 
 app.get("/parse", async (req, res) => {
-  const url = req.query.url; // ✅ Add this line
-
+  const { url } = req.query;
   if (!url) return res.status(400).json({ error: "Missing URL" });
 
   try {
