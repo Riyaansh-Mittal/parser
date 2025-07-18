@@ -133,6 +133,8 @@
     "yargs-parser": "^15.0.1",
     "express": "^4.16.4",
     "puppeteer": "13.5.2"
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
   },
   "bundleDependencies": [
     "jquery",
