@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const Mercury = require("@postlight/mercury-parser");
 const app = express();
@@ -6,7 +5,8 @@ const app = express();
 app.use(express.json());
 
 app.get("/parse", async (req, res) => {
-  ...
+  const url = req.query.url; // ✅ Add this line
+
   if (!url) return res.status(400).json({ error: "Missing URL" });
 
   try {
